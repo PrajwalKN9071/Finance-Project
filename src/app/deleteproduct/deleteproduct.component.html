@@ -1,0 +1,13 @@
+<form #deleteproductForm="ngForm" (ngSubmit)=" DeleteProduct(deleteproductForm)">
+    <table >
+        <tr>
+           Product Deleting
+        </tr>
+        <tr>
+            <td>Product ID</td><td> <input type="text" name="id" ngModel> </td>
+        </tr>
+        <tr>
+            <td> <input type="submit" value="submit"> </td>
+        </tr>
+    </table>
+</form>

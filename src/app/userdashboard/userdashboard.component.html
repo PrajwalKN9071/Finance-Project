@@ -1,0 +1,166 @@
+<!-- <div class="box2">
+    <h2 style="text-align:center">DashBoard</h2>
+    <div class="box">
+        <label class="name"><b>CARD NUMBER</b></label>
+        <input class="padding_textbox" type="text" placeholder="Card Number" name="Name" required>
+        <label  for="name"><b>Name</b></label>
+        <input class="padding_textbox" type="text" placeholder="Enter Name" name="Name" required>
+    <label  for="Phone number"><b>Valid till</b></label>
+        <input class="padding_textbox" type="text" placeholder="MM/YY" name="Phone number" required>
+        <label  for="Card Type"><b>cardtype</b></label>
+    
+        <input type="radio" id="gold" name="type" value="Gold">
+    <label for="html">GOLD</label>
+    <input type="radio" id="titanium" name="type" value="Titanium">
+    <label for="html">Titanium</label>
+    
+    <h4  class="box1">ACTIVATE</h4> 
+    </div>
+    <div style="padding:10px">
+    <p>TOTAL CREDIT:</p>
+    <input class="padding_textbox" type="text" required>
+    <P>CREDIT USED:</P>
+    <input class="padding_textbox" type="text" required>
+    <P>REMAINING CREDIT:</P>
+    <input class="padding_textbox" type="text" required>
+    </div>
+    <div style="text-align:center">
+        
+    <P>PRODUCTS PURCHASED</P>
+    <input class="padding_textbox" type="text" required>
+    <P>AMOUNT:</P>
+    <input class="padding_textbox" type="text" required>
+    </div>
+    <div style="padding:10px">
+    <P>PRODUCT NAME:</P>
+    <input class="padding_textbox" type="text" required>
+    <P>PAID:</P>
+    <input class="padding_textbox" type="text" required>
+    <P>BALANCE:</P><input class="padding_textbox" type="text" required>
+    </div>
+    <div style="padding:20px">
+    <p>RECENT TRANSACTIONS</p>
+    <input class="padding_textbox" type="text" required>
+    </div>
+    <div>
+    <table style="margin-left:400px">
+        <tr>
+          <th style="border:1px solid white;width:15%;height:50px">PRODUCT</th>
+          <th style="border:1px solid white;width:15%;height:50px">DATE</th>
+          <th style="border:1px solid white;width:15%;height:50px">AMOUNT PAID</th>
+        </tr>
+        <tr>
+            <th style="border:1px solid white;width:15%;height:50px"></th>
+            <th style="border:1px solid white;width:15%;height:50px"></th>
+            <th style="border:1px solid white;width:15%;height:50px"></th>
+          </tr>
+        
+      </table>
+      </div>
+    
+    
+    </div> -->
+    <a routerLink="/addcard"  class="btn btn-warning">Add Card</a> <td></td> <a routerLink="/home" class="btn btn-warning">Home</a>
+   
+    <h1>Card Details</h1>
+    <br>
+<!-- 
+    <table *ngFor="let sc of Carddetails ">  
+      <tr>
+         <td>Card Number : </td><td>{{ sc.cardno}}</td>
+      </tr>
+      <tr>
+        <td>Card Holder Name: </td><td>{{sc.nameofholder}}</td>
+      </tr> 
+      <tr>
+        <td>Card Status: </td><td>{{sc.cardStatus}}</td>
+      </tr>
+
+      </table> -->
+      <table >
+        <thead>
+          <th>Card Number</th>
+            <th>Card Holder Name</th>
+            <th>Card Status</th> 
+        </thead>
+        <tbody  *ngFor="let sc of Carddetails ">
+          <td>{{ sc.cardno}}</td>
+            <td>{{sc.nameofholder}}</td>
+            <td>{{sc.cardStatus}}</td>
+        </tbody>
+      
+      
+      </table>
+<br>
+<h1>Ordered Product</h1>
+<!-- 
+
+<table *ngFor="let sc of orderdetails ">  
+  <tr>
+    <td>Order Number</td><td>{{sc.orderno}}</td>
+  </tr>
+   <tr>
+    <td>Product Name : </td><td>{{ sc.prodname}}</td>
+  </tr> 
+  <tr>
+    <td>Cost per unit: </td><td>{{sc.cost_per_unit}}</td>
+  </tr> 
+  <tr>
+   <td>Emi Cost : </td><td>{{sc.emicost}}</td>
+  </tr>
+  <tr>
+    <td>Emi month : </td><td>{{sc.emimonth}}</td>
+  </tr>
+
+  <tr>
+    ....................................................................
+  </tr>
+  
+</table>
+ -->
+
+
+<table >
+  <thead>
+    <th>Order Number</th>
+      <th>Cost per unit</th>
+      <th>Emi Cost</th>
+      <th>Emi month</th>
+      <th>Pay</th>
+  </thead>
+  <tbody  *ngFor="let sc of orderdetails ">
+    <td>{{sc.orderno}}</td>
+      <td>{{sc.cost_per_unit}}</td>
+      <td>{{sc.emicost}}</td>
+      <td>{{sc.emimonth}}</td>
+      <td><a routerLink="/payment" class="btn btn-warning" >Payment</a></td>
+  </tbody>
+
+
+</table>
+
+
+
+
+
+
+
+
+
+<!-- 
+      <table *ngFor="let sc of orderdetails ">  
+        <tr>
+           <td>Product Name : </td><td>{{sc.prodname}}</td>
+        </tr>
+        <tr>
+          <td>Cost Per Unit: </td><td>{{sc.cost_per_unit}}</td>
+        </tr>
+        <tr>
+          <td>Emi Cost: </td><td>{{sc.emicost}</td>
+        </tr>
+        <tr>
+          <td>EMI Month: </td><td>{{sc.emimonth}}</td>
+        </tr>
+        </table>
+  
+   -->

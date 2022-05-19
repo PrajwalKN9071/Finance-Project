@@ -1,0 +1,92 @@
+<!-- <p>emi works!</p>
+
+<h4>Productsid:</h4> {{productsid}}
+<br>
+<h4>Productscost:</h4>{{productscost}}
+
+<h2>EMI options</h2>
+
+    <table class="container" >
+<tr> 
+    <td><input type="radio" name="month"  value="1" [(ngModel)]="months" ></td><td>1 month</td> 
+</tr>
+<tr>
+    <input type="radio" name="month"  value="2" [(ngModel)]="months"  > <td>2 month</td> 
+</tr>
+<tr>
+    <input type="radio" name="month"  value="3" [(ngModel)]="months"  > <td>3 month</td>
+</tr>
+<tr>
+    <input type="radio" name="month"  value="4" [(ngModel)]="months"  > <td>4 month</td>
+</tr>
+<tr>
+    <input type="radio" name="month"  value="5" [(ngModel)]="months"  > <td>5 month</td>
+</tr>
+<tr>
+    <input type="radio" name="month"  value="6" [(ngModel)]="months"  > <td>6 month</td>
+</tr>
+<tr><h5>Your EMI cost for the selected months is:</h5></tr>
+<tr>
+
+    <button (click)="calculate()"> Calculate EMI</button>
+</tr>
+<tr><h5>Your EMI cost for the selected months is:</h5></tr>
+<tr>
+    <br>
+<h4>{{emicost}}</h4>
+<br>
+</tr>
+<tr>
+    <td> <input type="submit" value="Buy" onclick="clicking()"> </td>
+    <a routerLink="/buy" class="btn btn-warning">Buy Product</a>
+</tr>
+    </table> -->
+
+
+
+    <div class="card mb-3" style="max-width: 540px;">
+        <div class="row g-0">
+            <div class="col-md-4">
+                <!-- <img src="..." class="img-fluid rounded-start" alt="..."> -->
+            </div>
+            <div class="col-md-8">
+                <div class="card-body">
+                    <h5 class="card-title">Product Id:{{productsid}}</h5>
+                    <p class="card-text">Product Cost: {{productscost}} </p>
+                    <p class="card-text">EMI Options : </p>
+                    <p class="card-text"></p>
+                    <table class="container">
+                        <tr>
+                            <input type="radio" name="month" value="1" [(ngModel)]="months">1 month
+                        </tr>
+                        <tr>
+                            <input type="radio" name="month" value="2" [(ngModel)]="months">2 month
+                        </tr>
+                        <tr>
+                            <input type="radio" name="month" value="3" [(ngModel)]="months">3 month
+                        </tr>
+                        <tr>
+                            <input type="radio" name="month" value="4" [(ngModel)]="months">4 month
+                        </tr>
+                        <tr>
+                            <input type="radio" name="month" value="5" [(ngModel)]="months">5 month
+                        </tr>
+                        <tr>
+                            <input type="radio" name="month" value="6" [(ngModel)]="months">6 month
+                        </tr>
+                        <tr>
+                            <!-- <button class="btn btn-Secondary" (click)="calculate()" > Calculate EMI</button> -->
+                            <button type="button" class="btn btn-secondary"  (click)="calculate()"> Calculate EMI</button>
+                        </tr>
+                        <br>
+                        <tr>
+                            <h5>EMI Cost for per Month :{{emicost}}</h5>
+                        </tr>
+                    </table>
+                    <p class="card-text">
+                        <!-- <button type="submit">Buy</button> -->
+                        <a routerLink="/buy" class="btn btn-warning" type="submit">Buy Product</a></p>
+                </div>
+            </div>
+        </div>
+    </div>

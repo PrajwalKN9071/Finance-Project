@@ -1,0 +1,99 @@
+<!-- <a routerLink="/addproduct" class="btn btn-warning">Add Product</a>
+<a routerLink="/deleteproduct" class="btn btn-warning" >Delete product</a>
+<h3>Customer Details</h3>
+
+<table *ngFor="let ab of customerdetails">
+    <tr>
+        <td>Name : </td><td>{{ab.first_Name}}</td>
+       
+    </tr>
+    <tr>
+        <td>Email : </td><td>{{ab.email_id}}</td>
+    </tr>
+    <tr>
+        <td>Phone Number : </td><td>{{ab.phone_number}}</td>
+    </tr>
+    <tr>
+        <td>Bank Name :</td> <td>{{ab.bank_name}}</td>
+    </tr>
+    <tr>
+        <td>Account number</td><td>{{ab.bank_Account_number}}</td>
+    </tr>
+    <tr>
+        <td>Joining Fee Status</td> <td>{{ab.joiningFeeStatus}}</td>
+    </tr>
+    <tr>
+        <td>Card Status : </td>  <td><button class="btn btn-warning" value="NotActivated" (click)="gotoupdate()">{{ab.cardStatus}}Activate</button></td>
+    </tr>
+    <tr>
+        ....................................................................................................................................
+    </tr>
+    <table *ngFor="let sc of Carddetails ">  
+        <tr>
+           <td>Card Number : </td><td>{{ sc.cardno}}</td>
+        </tr>
+        <tr>
+          <td>Card Holder Name: </td><td>{{sc.nameofholder}}</td>
+        </tr> 
+        <tr>
+          <td>Card Status: </td><td>{{sc.cardStatus}}</td>
+        </tr>
+        <tr>
+          <td>Joining Fee status: </td><td>{{sc.joiningFeeStatus}}</td>
+        </tr>
+        <tr>
+          <td>Card Limit: </td><td>{{sc.limit}}</td>
+        </tr>
+        <tr>
+          <td>Card Balance: </td><td>{{sc.balance}}</td>
+        </tr>
+  
+        </table>
+
+    </table>
+    
+
+ -->
+ <nav class="navbar navbar-expand-lg navbar-light bg-light" id="a1">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#">Finance Company</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto d-flex">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" routerLink="/addproduct" href="#">Add Product</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" routerLink="/deleteproduct" href="#">Delete Product</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" routerLink="/home" href="#">Home</a>
+        </li>
+       </ul>
+        
+    </div>
+  </div>
+</nav>
+
+<h3>Customer Details</h3>
+<table >
+  <thead>
+    <th>Name</th>
+      <th>Email</th>
+      <th>Bank Name</th>
+      <th>Account number</th>
+      <th>Card Status</th>
+  </thead>
+  <tbody  *ngFor="let ab of Carddetails" >
+    <td>{{ab.nameofholder}}</td>
+      <td>{{ab.email}}</td>
+      <td>{{ab.bank_name}}</td>
+      <td>{{ab.bank_Account_number}}</td>
+      
+      <td><button class="btn btn-warning"   (click)="gotoupdate()">Activate</button></td>
+  </tbody>
+
+
+</table>

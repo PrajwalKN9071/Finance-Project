@@ -1,0 +1,83 @@
+<!-- <h1>Your Order Details</h1>
+<table class="table table-bordered">
+    <tr>
+        <td>Product ID : </td>
+        <td>{{productsid}}</td>
+    </tr>
+    <tr>
+        <td>Product Name : </td>
+        <td>{{productname}}</td>
+    </tr>
+    <tr>
+        <td>Product Cost : </td>
+        <td>{{productscost}}</td>
+    </tr>
+    <tr>
+        <td>User Email ID : </td>
+        <td>{{email}}</td>
+    </tr>
+    <tr>
+        <td>Selected EMI Months : </td>
+        <td>{{months}}</td>
+    </tr>
+    <tr>
+        <td>EMI Cost per months</td>
+        <td>{{emicost}}</td>
+    </tr>
+</table>
+<h1>Card Details</h1>
+<button type="radio">
+    <table *ngFor="let sc of Carddetails " class="table table-bordered">
+        <tr>
+            <td>Card Number : </td>
+            <td>{{ sc.cardno}}</td>
+        </tr>
+        <br>
+        <tr>
+            <td>Card Holder Name: </td>
+            <td>{{sc.nameofholder}}</td>
+        </tr>
+        <tr>
+
+        </tr>
+    </table>
+
+</button>
+
+<button type="submit" (click)="buynow()">Buy</button> -->
+<div class="card mb-3" style="max-width: 100%;">
+    <div class="row g-0">
+        <div class="col-md-6">
+            <div class="card-body">
+                <h5 class="card-title">Product Name     : {{productname}}</h5>
+                <p class="card-text">Product Id         : {{productsid}}</p>
+                <p class="card-text">Product Cost       : {{productscost}}</p>
+                <p class="card-text">Email Id           : {{email}}</p>
+                <p class="card-text">Selected EMI Months: {{months}}</p>
+                <p class="card-text">EMI Cost per months: {{emicost}}</p>
+            </div>
+        </div>
+    </div>
+    <div class="row g-0">
+        <div class="col-md-6">
+            <!-- <button type="radio">
+            <div class="card-body" *ngFor="let sc of Carddetails ">
+                <p class="card-text">Card Holder Name :{{sc.nameofholder}}</p>
+                <p class="card-text">Card Number      :{{ sc.cardno}}</p>
+            </div>
+            </button> -->
+            <button type="button" class="btn btn-info" value="Submit" (click)="buynow()" routerLink="/payment"> Buy </button>
+        </div>
+    </div>
+</div>
+
+<!-- <div class="input-box">
+
+    <span class="details">Card</span>
+ 
+     <select name="cardtype" id="cardtype" class="card-body" *ngFor="let sc of Carddetails " ngModel>                  
+        <option value="Gold"(click)="buynow()" >  <p class="card-text">{{sc.nameofholder}}</p>
+        </option>
+      </select>
+    
+  </div> -->

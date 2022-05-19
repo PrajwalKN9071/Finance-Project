@@ -1,0 +1,92 @@
+<!-- 
+<form #addcardForm="ngForm" (ngSubmit)="addcard(addcardForm)">
+    <table >
+        <tr>
+            Add Your Card
+        </tr>
+        <tr>
+            <td>Name of holder</td><td> <input type="text" name="nameofholder" ngModel> </td>
+        </tr>
+        <tr>
+            <td>Email</td><td> <input type="email" name="email" ngModel> </td>
+        </tr>
+        <tr>
+            <td>Card Number</td><td> <input type="number" name="cardno" ngModel> </td>
+        </tr>
+        <tr>
+            <td>Card Type</td><td> <select name="cardtype" id="cardtype" ngModel>                  
+                <option value="Gold">Gold</option>
+                <option value="Platinum">Platinum</option>
+              </select> </td>
+        </tr>
+        <tr>
+            <td>Bank Name</td><td> <input type="text" name="bank_name" ngModel> </td>
+        </tr>
+        <tr>
+            <td>Bank Acount Number</td><td> <input type="number" name="bank_account_number" ngModel> </td>
+        </tr>
+       
+        <tr>
+            <td>IFSC</td><td> <input type="text" name="ifs_code" ngModel> </td>
+        </tr>   
+        <tr>
+           
+            <td> <input type="submit" value="submit"> </td>
+        </tr>
+    </table>
+</form>
+
+
+ -->
+
+
+<div class="container">
+    <div class="title">Add Your Card Details</div>
+    <div class="content">
+      <form action="#"  #addcardForm="ngForm" (ngSubmit)="addcard(addcardForm)">
+        <div class="user-details">
+          <div class="input-box">
+            <span class="details">Card Holder Name </span>
+            <input type="text" placeholder="Enter name of card holder" required name="nameofholder" ngModel>
+          </div>
+          <div class="input-box">
+            <span class="details">Email Id</span>
+            <input type="email" placeholder="Enter email id" required name="email" ngModel>
+          </div>
+          <div class="input-box">
+            <span class="details">Card Number</span>
+            <input type="number" placeholder="Enter card number" required name="cardno" ngModel>
+          </div>
+   
+          <div class="input-box">
+            <span class="details">Card Type</span>
+             <select name="cardtype" id="cardtype" ngModel>                  
+                <option value="Gold">Gold</option>
+                <option value="Titanium">Titanium</option>
+              </select>
+          </div>
+          <div class="input-box">
+            <span class="details">Bank Name</span>
+            <input type="text" placeholder="enter bank name" required name="bank_name" ngModel>
+          </div>
+          <div class="input-box">
+            <span class="details">Bank Account Number </span>
+            <input type="number" placeholder="enter bank account number" required  name="bank_account_number" ngModel>
+          </div> 
+          <div class="input-box">
+            <span class="details">IFSC Code</span>
+            <input type="text" placeholder="enter ifsc code" required name="ifs_code" ngModel>
+         </div>
+         <div class="input-box">
+            <span class="details"></span>
+            
+         </div>
+        
+        <div class="button">
+          <!-- <input type="submit" value="Register" > -->
+          <input type="submit" value="submit">
+        </div>
+    </div>
+      </form>
+    </div>
+  </div>

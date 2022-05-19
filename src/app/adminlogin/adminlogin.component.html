@@ -1,0 +1,32 @@
+<!-- <h4>Welcome to Admin Login</h4>
+<form #loginForm="ngForm" (ngSubmit)="validateAdminLogin(loginForm)">
+    <table >
+        
+        <tr>
+            <td>Login Name</td><td> <input type="text" name="loginid" ngModel> </td>
+        </tr>
+        <tr>
+            <td>Password</td><td> <input type="password" name="loginpass" ngModel> </td>
+        </tr>
+       
+        <tr>
+           
+            <td><button type="submit" value="SAVE">LOGIN</button></td>
+        </tr>
+    </table>
+</form> -->
+
+
+<div class="main">
+
+    <p class="sign" align="center">Sign in</p>
+    <form class="form1" #loginForm="ngForm" (ngSubmit)="validateAdminLogin(loginForm)">
+        <input class="un " type="text" align="center" placeholder="Admin name or Email-id" name="loginid" ngModel>
+
+        <input class="pass" type="password" align="center" placeholder="Password" name="loginpass" ngModel>
+        <input class="submit" align="center"  value="Login" type="submit" >
+
+    </form>.
+
+
+</div>

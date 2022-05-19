@@ -1,0 +1,48 @@
+.box{
+    height:200px;
+    width:200px;
+    border:3px solid;
+    content: center;
+    color: black;
+    margin-left:650px;
+
+}
+.box1{
+   
+    border:3px solid;
+    background-color: lightgreen;
+    text-align: center;
+    
+    color: black;
+
+}
+.box2{
+    height: 100%;
+   width: 100%;
+   
+   background-size:cover;
+    border:3px solid;
+    background-color:greenyellow;   
+     color:black;
+}
+.box3{
+    height: 30px;
+    width: 120px;
+    border:2px solid;
+    background-color:green;
+}
+table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+  }
+  
+  td, th {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+  }
+  
+  tr:nth-child(even) {
+    background-color: #dddddd;
+  }

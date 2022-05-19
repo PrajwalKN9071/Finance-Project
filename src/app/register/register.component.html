@@ -1,0 +1,87 @@
+
+<!-- <form #customerForm="ngForm" (ngSubmit)="savecustomer(customerForm)">
+    <table >
+        <tr>
+            Welcome to Registration
+        </tr>
+        <tr>
+            <td>First Name</td><td> <input type="text" name="first_Name" ngModel> </td>
+        </tr>
+        <tr>
+            <td>Middle Name</td><td> <input type="text" name="middle_Name" ngModel> </td>
+        </tr>
+        <tr>
+            <td>Last Name</td><td> <input type="text" name="last_Name" ngModel> </td>
+        </tr>
+        <tr>
+            <td>Date of Birth</td><td> <input type="date" name="date_of_birth" ngModel> </td>
+        </tr>
+        <tr>
+            <td>Phone Number</td><td> <input type="number" name="phone_number" ngModel> </td>
+        </tr>
+        <tr>
+            <td>Email ID</td><td> <input type="email" name="email_id" ngModel> </td>
+        </tr>
+        <tr>
+            <td>Password</td><td> <input type="password" name="password" ngModel> </td>
+        </tr>
+        <tr>
+            <td>Address</td><td> <input type="text" name="address" ngModel> </td>
+        </tr>   
+        <tr>
+           
+            <td> <input type="submit" value="submit"> </td>
+        </tr>
+    </table>
+</form>
+
+
+ -->
+
+
+ <div class="container">
+    <div class="title">Registration</div>
+    <div class="content">
+      <form action="#" #customerForm="ngForm" (ngSubmit)="savecustomer(customerForm)">
+        <div class="user-details">
+          <div class="input-box">
+            <span class="details">Full Name</span>
+            <input type="text" placeholder="Enter your name" required name="first_Name" ngModel>
+          </div>
+          <div class="input-box">
+            <span class="details">Middle Name</span>
+            <input type="text" placeholder="Enter your middle name" required name="middle_Name" ngModel>
+          </div>
+          <div class="input-box">
+            <span class="details">Last Name</span>
+            <input type="text" placeholder="Enter your last name" required name="last_Name" ngModel>
+          </div>
+          <div class="input-box">
+            <span class="details">Date of Birth</span>
+            <input type="date" placeholder="Enter your date of birth" required  name="date_of_birth" ngModel>
+          </div>
+          <div class="input-box">
+            <span class="details">Phone Number</span>
+            <input type="number" placeholder="Enter your phone number" required name="phone_number" ngModel>
+          </div>
+          <div class="input-box">
+            <span class="details">Email Id</span>
+            <input type="email" placeholder="Confirm your email id" required name="email_id" ngModel>
+          </div>
+          <div class="input-box">
+            <span class="details">Password</span>
+            <input type="password" placeholder="Confirm your password" required name="password" ngModel>
+          </div> 
+          <div class="input-box">
+            <span class="details">Address</span>
+            <input type="text" placeholder="Confirm your address" required name="address" ngModel>
+         </div>
+        
+        <div class="button">
+          <!-- <input type="submit" value="Register" > -->
+          <input type="submit" value="submit">
+        </div>
+    </div>
+      </form>
+    </div>
+  </div>

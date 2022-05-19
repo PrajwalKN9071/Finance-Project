@@ -1,0 +1,13 @@
+<p>updatecust works!</p>
+<div style="width: 400px;">
+    <form  #updatecustomerForm="ngForm" (ngSubmit)="updateCustomer(updatecustomerForm)">
+        <div class="form-group">
+            <label for="cardstatus">Card Status</label>
+            <input type="text" class="form-control" id="cardstatus" required [(ngModel)]="Updatecust.cardStatus" name="cardstatus">
+            <button type="submit"    class="btn btn-success">Submit</button>
+     
+        </div>
+
+       </form>
+
+</div>
